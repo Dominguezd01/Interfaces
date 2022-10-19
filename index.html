@@ -6,86 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .juegos {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 10px;
-            grid-auto-rows: minmax(100px, auto);
-        }
+    <link rel="stylesheet" href="./style.css" />
 
-        .juego1{
-            grid-column: 1 / 3;
-            grid-row: 1;
-        }
-        .juego2{
-            grid-column: 2 / 3;
-            grid-row: 1;
-        }
-        .juego3{
-            grid-column: 3 / 3;
-            grid-row: 1;
-        }
-        .juego4{
-            grid-column: 1 / 3;
-            grid-row: 2;
-        }
-        .juego5{
-            grid-column: 2 / 3;
-            grid-row: 2;
-        }
-        .juego6{
-            grid-column: 3 / 3;
-            grid-row: 2;
-        }
-       
-       
-        #imagen {
-            list-style: none;
-        }
-
-        .componentes {
-            padding-left: 8em;
-
-        }
-
-        li {
-            font-size: large;
-        }
-
-        /*
-        .izqda{
-            float: left;
-        }
-        .dcha{
-            float: right;
-            padding-right: 20em;
-        }
-        */
-    </style>
 </head>
 
 
 <body>
     <div class="juegos">
 
-
-        <div class="juego1">
-            <ul class="izqda">
-                <li id="imagen">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Mario_Series_Logo.svg/1200px-Mario_Series_Logo.svg.png"
-                        height="250" width="450px" />
-                </li><br />
-                <div class="componentes">
-                    <li><b>NOMBRE: </b> Super Mario</li>
-                    <li><b>DESARROLLADORA: </b> Nintendo</li>
-                    <li><b>FECHA DE SALIDA: </b> 1990</li>
-                    <li><b>PLACA BASE: </b> SNES</li>
-                    <li><b>PUNTUACION: </b> 5</li>
-                </div>
-            </ul>
-        </div>
-
+        <a href="./index2.html">
+            <div class="juego1" >
+                
+                <ul class="izqda">
+                    <li id="imagen">
+                        <img src="./supermario.png"
+                            height="250" width="450px" />
+                    </li><br />
+                    <div class="componentes">
+                        <li><b>NOMBRE: </b> Super Mario</li>
+                        <li><b>DESARROLLADORA: </b> Nintendo</li>
+                        <li><b>FECHA DE SALIDA: </b> 1990</li>
+                        <li><b>PLACA BASE: </b> SNES</li>
+                        <li><b>PUNTUACION: </b> 5</li>
+                    </div>
+                </ul>
+            </div>
+        </a>
         <div class="juego2">
             <ul class="dcha">
                 <li id="imagen">
@@ -106,7 +52,7 @@
         <div class="juego3">
             <ul class="izqda">
                 <li id="imagen">
-                    <img src="https://cdn.worldvectorlogo.com/logos/pac-man.svg" height="250" width="450px" />
+                    <img src="./pac-man-logo-svg-vector.svg" height="250" width="450px" />
                 </li><br />
                 <div class="componentes">
                     <li><b>NOMBRE: </b>Pac-Man</li>
@@ -137,11 +83,12 @@
         <div class="juego5">
             <ul class="izqda">
                 <li id="imagen">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Doom_%E2%80%93_Game%E2%80%99s_logo.svg/1200px-Doom_%E2%80%93_Game%E2%80%99s_logo.svg.png" height="250" width="450px" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Doom_%E2%80%93_Game%E2%80%99s_logo.svg/1200px-Doom_%E2%80%93_Game%E2%80%99s_logo.svg.png"
+                        height="250" width="450px" />
                 </li><br />
                 <div class="componentes">
                     <li><b>NOMBRE: </b>Doom</li>
-                    <li><b>DESARROLLADORA: </b>	ID Software</li>
+                    <li><b>DESARROLLADORA: </b> ID Software</li>
                     <li><b>FECHA DE SALIDA: </b>1993</li>
                     <li><b>PLACA BASE: </b>DOOM BASE</li>
                     <li><b>PUNTUACION: </b> 5</li>
@@ -152,13 +99,13 @@
         <div class="juego6">
             <ul class="izqda">
                 <li id="imagen">
-                    <img src="https://cdn.worldvectorlogo.com/logos/pac-man.svg" height="250" width="450px" />
+                    <img src="./MetalSlugLogo.png" height="250" width="450px" />
                 </li><br />
                 <div class="componentes">
-                    <li><b>NOMBRE: </b>Pac-Man</li>
-                    <li><b>DESARROLLADORA: </b>Namco</li>
-                    <li><b>FECHA DE SALIDA: </b> 1980</li>
-                    <li><b>PLACA BASE: </b> PACMAN-BASE</li>
+                    <li><b>NOMBRE: </b>Metal Slug</li>
+                    <li><b>DESARROLLADORA: </b>SNK</li>
+                    <li><b>FECHA DE SALIDA: </b> 1996</li>
+                    <li><b>PLACA BASE: </b> METAL SLUG-BASE</li>
                     <li><b>PUNTUACION: </b> 4</li>
                 </div>
             </ul>

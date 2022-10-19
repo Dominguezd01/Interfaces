@@ -1,0 +1,27 @@
+body{background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);}
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap');
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 1.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "logoJuego textoJuego textoJuego"
+      ". textoJuego textoJuego"
+      "captura1 . captura2";
+  }
+  
+  .logoJuego { grid-area: logoJuego; }
+  
+  .textoJuego { 
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.24em;
+    grid-area: textoJuego;
+    margin-left: 15px;
+
+}
+  
+  .captura1 { grid-area: captura1; }
+  
+  .captura2 { grid-area: captura2; }
+  
