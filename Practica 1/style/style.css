@@ -44,10 +44,12 @@ a {
   padding-left: 8em;
   text-decoration: none;
   color: black;
+
 }
 
 li {
   font-size: large;
+  list-style: none;
 }
 
 /*

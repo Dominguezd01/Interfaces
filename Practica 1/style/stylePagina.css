@@ -21,7 +21,8 @@ body{background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);}
 
 }
   
-  .captura1 { grid-area: captura1; }
+  .captura1 { 
+    grid-area: captura1;}
   
   .captura2 { grid-area: captura2; }
   
