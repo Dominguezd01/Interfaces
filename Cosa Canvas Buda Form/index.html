@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<script src="canvasScript.js" defer></script>
+<html>
+  <head>
+    <title>CANVAS</title>
+  </head>
+  <body>
+    <!--
+    <div class="botones">
+      <button id="boton1">Recta</button>
+      <button id="boton2" onclick="idCanvasCirculo">Circulo</button>
+      <button id="boton3" onclick="idCanvasCuadrado">Cuadrado</button>
+      <button id="boton4" onclick="idCanvasTriangulo">Triangulo</button>
+    </div>
+    -->
+    <form id="form">
+      <select name="form">
+         <option name="recta">
+          Recta
+        </option>
+        <option  name="circulo">
+          Circulo
+        </option>
+        <option  name="Cuadrado">
+          Cuadrado
+        </option>
+        <option  name="Triangulo">
+          Triangulo
+        </option>
+      </select>
+       
+      <input type="submit"/>
+    </form>
+    <canvas
+      id="idCanvasRecta"
+      width="200"
+      height="150"
+      style="border: 1px solid #000000"
+    >
+    </canvas>
+    <canvas
+      id="idCanvasCirculo"
+      width="200"
+      height="150"
+      style="border: 1px solid #000000"
+    >
+    </canvas>
+    <canvas
+      id="idCanvasCuadrado"
+      width="200"
+      height="150"
+      style="border: 1px solid #000000"
+    >
+    </canvas>
+    <canvas
+      id="idCanvasTriangulo"
+      width="200"
+      height="150"
+      style="border: 1px solid #000000"
+    >
+    </canvas>
+  </body>
+</html>

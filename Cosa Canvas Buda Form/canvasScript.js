@@ -11,7 +11,7 @@
     varias cosas a la vez pero siempre el triangulo, ahora cada funcion de dibujar 
     carga el contexto de su propio canva por parametro
 */
-
+/*
 window.onload = function () {
   let boton1 = document.getElementById("boton1")
   boton1.onclick = function () { idCanvasRecta("idCanvasRecta") }
@@ -22,8 +22,55 @@ window.onload = function () {
   let boton4 = document.getElementById("boton4")
   boton4.onclick = function () { idCanvasTriangulo("idCanvasTriangulo") }
 }
+*/
+window.onload = function () {
+  document.querySelector("form")
+    .addEventListener('submit', e => {
+      e.preventDefault()
+      const data = Object.fromEntries(
+        new FormData(e.target)
+
+      )
+      asignarValo(data)
+    })
+
+}
+   let mapOpciones = new Map()
+   mapOpciones.set("Recta", 0)
+              .set("Circulo", 0)
+              .set("Cuadrado", 0)
+              .set("Triangulo", 0)
+
+const asignarValo = (dataForm) => {
+  let datosFormulario = dataForm
+
+  if (datosFormulario["form"] == "Recta" && comprobarDibujo(mapOpciones,datosFormulario["form"])) {
+      idCanvasRecta("idCanvasRecta")
+  }
+  if (datosFormulario["form"] == "Circulo" &&comprobarDibujo(mapOpciones,datosFormulario["form"])) {
+    idCanvasCirculo("idCanvasCirculo")
+  }
+  if (datosFormulario["form"] == "Cuadrado" &&comprobarDibujo(mapOpciones,datosFormulario["form"])) {
+    idCanvasCuadrado("idCanvasCuadrado")
+  }
+  if (datosFormulario["form"] == "Triangulo" &&comprobarDibujo(mapOpciones,datosFormulario["form"])) {
+    idCanvasTriangulo("idCanvasTriangulo")
+  }
+
+}
 
 
+const comprobarDibujo = (opciones,forma) =>{
+    console.log(opciones)
+    if(opciones.get(forma)==0){
+      opciones.set(forma, opciones.get(forma)+1)
+      return true;
+    }else{
+      opciones.set(forma, opciones.get(forma)+1)
+      console.log(opciones.get(forma))
+      return false
+    }
+}
 /*
     Esta funcion ahora devulve el contexto del canvas que le pasas por parametro que viene indicado en el
     onclick de cada boton en la funcion metida en el window.onload.
@@ -40,7 +87,7 @@ const cargaContextoCanvas = (canva) => {
 }
 
 // Función que se ejecuta al pulsar el boton "Recta"
-const idCanvasRecta = (canvas) =>{
+const idCanvasRecta = (canvas) => {
   //Recibimos el elemento canvas
   var ctx = cargaContextoCanvas(canvas);
   if (ctx) {
@@ -55,7 +102,7 @@ const idCanvasRecta = (canvas) =>{
 };
 
 // Funcion que se ejecuta al pulsar boton "Circulo"
-const idCanvasCirculo = (canvas) =>{
+const idCanvasCirculo = (canvas) => {
   //Recibimos el elemento canvas
   var ctx2 = cargaContextoCanvas(canvas);
   if (ctx2) {
@@ -70,7 +117,7 @@ const idCanvasCirculo = (canvas) =>{
 };
 
 // Funcion que se ejecuta al pulsar boton "Cuadrado"
-const idCanvasCuadrado = (canvas) =>{
+const idCanvasCuadrado = (canvas) => {
   //Recibimos el elemento canvas
   var ctx3 = cargaContextoCanvas(canvas);
   if (ctx3) {
@@ -86,7 +133,7 @@ const idCanvasCuadrado = (canvas) =>{
 
 
 // Funcion que se ejecuta al pulsar boton "Triangulo"
-const idCanvasTriangulo =(canvas) => {
+const idCanvasTriangulo = (canvas) => {
   //Recibimos el elemento canvas
   var ctx4 = cargaContextoCanvas(canvas);
   if (ctx4) {
@@ -104,35 +151,35 @@ const idCanvasTriangulo =(canvas) => {
   /* ESTO NO TE HACE FALTA PERO LO HE DEJADO POR SI YO QUE SE, PERO ES MAS UN PROBLEMA QUE OTRA COSA. Att: Dominguez
 Función que se ejecuta al cargar la ventana recta
 window.onclick = function () {
-  //Recibimos el elemento canvas
-  var ctx = cargaContextoCanvas("idCanvasRecta");
-  var ctx = cargaContextoCanvas("idCanvasCirculo");
-  var ctx = cargaContextoCanvas("idCanvasCuadrado");
-  var ctx = cargaContextoCanvas("idCanvasTriangulo");
-  if (ctx) {
-    var c = document.getElementById("idCanvasRecta");
-    var ctx = c.getContext("2d");
-    ctx.moveTo(0, 0);
-    ctx.lineTo(200, 150);
-    ctx.stroke();
-    var c = document.getElementById("idCanvasCirculo");
-    var ctx = c.getContext("2d");
-    ctx.beginPath();
-    ctx.arc(100, 75, 50, 0, 2 * Math.PI);
-    ctx.stroke();
-    var c = document.getElementById("idCanvasCuadrado");
-    var ctx = c.getContext("2d");
-    ctx.beginPath();
-    ctx.fillRect(25, 25, 100, 100);
-    ctx.stroke();
-    var c = document.getElementById("idCanvasTriangulo");
-    var ctx = c.getContext("2d");
-    ctx.moveTo(5, 5);
-    ctx.lineTo(5, 100);
-    ctx.lineTo(150, 100);
-    ctx.closePath();
-    ctx.stroke();
-  }
+//Recibimos el elemento canvas
+var ctx = cargaContextoCanvas("idCanvasRecta");
+var ctx = cargaContextoCanvas("idCanvasCirculo");
+var ctx = cargaContextoCanvas("idCanvasCuadrado");
+var ctx = cargaContextoCanvas("idCanvasTriangulo");
+if (ctx) {
+var c = document.getElementById("idCanvasRecta");
+var ctx = c.getContext("2d");
+ctx.moveTo(0, 0);
+ctx.lineTo(200, 150);
+ctx.stroke();
+var c = document.getElementById("idCanvasCirculo");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(100, 75, 50, 0, 2 * Math.PI);
+ctx.stroke();
+var c = document.getElementById("idCanvasCuadrado");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.fillRect(25, 25, 100, 100);
+ctx.stroke();
+var c = document.getElementById("idCanvasTriangulo");
+var ctx = c.getContext("2d");
+ctx.moveTo(5, 5);
+ctx.lineTo(5, 100);
+ctx.lineTo(150, 100);
+ctx.closePath();
+ctx.stroke();
+}
 };
 *//////////////////////////////////////////////
 /*
