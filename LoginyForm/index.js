@@ -1,5 +1,6 @@
 window.onload = function (){
    cargarForm()
+   getEl
 }
 
 const cargarForm = () =>{
@@ -21,12 +22,13 @@ const recogerValores = (data) =>{
     localStorage.setItem("nomUsuario", obj.userName)
     let form = document.getElementById("form")
     form.style.display = "none"
+    crearH1()
 }
-const crearH1 = (usuario) =>{
+const crearH1 = () =>{
    
     let h1 = document.createElement("h1")
-
-    h1.innerHTML += "Hola "+ usuario + " introduce tus datos"
+   
+    h1.innerHTML += "Hola "+  localStorage.getItem("nomUsuario") + " introduce tus datos"
 
     document.body.append(h1)
 }
