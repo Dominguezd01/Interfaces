@@ -1,9 +1,8 @@
 body{
   background-image: linear-gradient(160deg, rgba(0,0,0,1) 0%, rgba(116,116,116,1) 70%);
   background-repeat: no-repeat;
-  background-color:linear-gradient(160deg, rgba(0,0,0,1) 0%, rgba(116,116,116,1) 70%); ;
   font-family: 'Bebas Neue', cursive;
-  background-size: 200%;
+  background-size: 100%;
   background-position: center ;
 }
 .container {
@@ -26,8 +25,9 @@ body{
   color: white;
   left: 50%;
   position: absolute;
-  font-size: 50px;
-  margin-top: 20px;
+  font-size: 5em;
+  margin-top: 50px;
+  font-weight:bold;
 
   transform: translate(-50%, -50%);
 }
@@ -37,6 +37,7 @@ body{
   border: 15px, solid, black;
   color:white;
   text-decoration: none;
+  font-size: 2em;
 }
 
 
@@ -54,6 +55,7 @@ a{
   justify-self: stretch;
   align-self: stretch;
   grid-area: main;
+  font-family: 'Bebas Neue', cursive;
 }
 
 #izqda{
@@ -61,10 +63,23 @@ a{
 }
 #dcha{
   float:right;
-  margin-right: 50px;
+  margin-right: 150px;
 }
 #textoPagina{
+  font-size: 2.5em;
   margin-bottom: 1em;
   color:white;
+  font-family: 'Bebas Neue', cursive;
 }
 
+#textoDcha{
+  margin-left: 4em;
+}
+
+#textoIzqda{
+  margin-left: 8em;
+}
+
+marquee{
+  color: white;
+}
