@@ -23,6 +23,9 @@ const recogerValores = (data) =>{
     let form = document.getElementById("form")
     form.style.display = "none"
     crearH1()
+    let form2 = document.getElementById("divForm2")
+    form2.style.display = "block"
+  
 }
 const crearH1 = () =>{
    
