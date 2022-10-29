@@ -24,7 +24,7 @@ const recogerValores = (data) =>{
     form.style.display = "none"
     crearH1()
     let form2 = document.getElementById("divForm2")
-    form2.style.display = "block"
+    form2.style.display = "inline"
   
 }
 const crearH1 = () =>{
