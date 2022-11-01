@@ -1,6 +1,6 @@
 window.onload = function (){
    cargarForm()
-   getEl
+
 }
 
 const cargarForm = () =>{
