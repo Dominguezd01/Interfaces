@@ -22,17 +22,11 @@ const recogerValores = (data) =>{
     localStorage.setItem("nomUsuario", obj.userName)
     let form = document.getElementById("form")
     form.style.display = "none"
-    crearH1()
+    let h1Usuarios = document.getElementById("h1Usuario")
+    h1Usuarios.innerHTML += "Hola "+  localStorage.getItem("nomUsuario") + " introduce tus datos"
     let form2 = document.getElementById("divForm2")
-    form2.style.display = "block"
+    form2.style.display = "inline"
   
 }
-const crearH1 = () =>{
-   
-    let h1 = document.createElement("h1")
-   
-    h1.innerHTML += "Hola "+  localStorage.getItem("nomUsuario") + " introduce tus datos"
 
-    document.body.append(h1)
-}
 

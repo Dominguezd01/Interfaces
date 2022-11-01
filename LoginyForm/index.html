@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,26 +8,38 @@
     <title>Document</title>
     <script src="./index.js" defer></script>
     <link rel="stylesheet" href="./style.css">
-    
+
 </head>
 
 <body>
+    <div id="divForm1">
     <form id="form">
-        <label for="userName">Nombre Usuario</label><br>
-        <input type="text" name="userName"/><br>
-        <br>
-        <label for="password">Contraseña</label><br>
-        <input type="password" name="pass"/>
-        <a href="./index2.html">
-            <input type="submit"/>
-        </a>
+        <div class="camposLogin">
+            <div id="userName">
+                <input type="text" name="userName" placeholder="Nombre de Usuario"/><br>
+            </div>
+            
+            <br>
+            <div id="passwd">
+            <input type="password" name="pass" placeholder="Contraseña"/>
+            </div>
+                <input type="submit" id="botonEnviar" />
+        </div>
+        
     </form>
-
+</div>
     <div id="divForm2" style="display: none;">
+        <h1 id="h1Usuario"></h1>
         <form id="form2">
-            <input></input>
+            <input id="nombre" name="nombre" placeholder="Nombre"></input>&nbsp;
+            <input id="apellidos" name="apellidos" placeholder="Apellidos"></input>&nbsp;
+            <input id="correo" name="email" placeholder="Email"/><br>
+            <input id="fechaNac" type="date" name="fechaNac"/>&nbsp;
+            <input id="unnnamed" placeholder="unnamed">&nbsp;
+            <input id="unnnamed" placeholder="unnamed">
         </form>
 
     </div>
 </body>
+
 </html>
