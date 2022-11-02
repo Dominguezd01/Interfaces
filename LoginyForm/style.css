@@ -35,8 +35,9 @@ body {
   background: rgb(100, 200, 255);
   cursor: pointer;
 }
+
 #form a{
-  width: 400px;
+  width: 100px;
   height: 100px;
   margin: 0.5rem;
   background-color: #ebebeb;
@@ -50,6 +51,7 @@ body {
   color:black;
 }
 
+
 #form2 input {
   width: 15%;
   height: 30px;
@@ -60,9 +62,14 @@ body {
   -moz-border-radius: 5px 5px 5px 5px;
 }
 
-label{
+#form2 label{
   color: white;
+  font-size: 1em;
 }
+
+
 h1 {
   color: antiquewhite;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
