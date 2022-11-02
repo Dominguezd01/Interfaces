@@ -20,7 +20,7 @@ const cargarForm = () =>{
 const recogerValores = (data) =>{
     let obj = JSON.parse(data)
     localStorage.setItem("nomUsuario", obj.userName)
-    if(localStorage.getItem("nomUsuario")!=""&& obj.pass != ""){
+    if(localStorage.getItem("nomUsuario")!="" && obj.pass != ""){
       window.location.href = "./form2.html"
     }else{
       let label = document.getElementById("etiqueta")
