@@ -2,7 +2,7 @@ body {
   background-color: #474747;
 }
 
-#divForm1 {
+#divForm1{
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
@@ -14,7 +14,7 @@ body {
 
 ::placeholder {
   text-align: center;
-  color: black;
+  color: #302f2fbe;
 }
 
 #form input {
@@ -23,9 +23,10 @@ body {
   margin: 0.5rem;
   background: #ebebeb;
   border: none;
-  border-radius: 20px 20px 20px 20px;
-  -webkit-border-radius: 20px 20px 20px 20px;
-  -moz-border-radius: 20px 20px 20px 20px;
+  border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  text-align: center;
 }
 
 #form button {
@@ -34,18 +35,34 @@ body {
   background: rgb(100, 200, 255);
   cursor: pointer;
 }
-
-
-h1{
-      color:antiquewhite;
+#form a{
+  width: 400px;
+  height: 100px;
+  margin: 0.5rem;
+  background-color: #ebebeb;
+  border: none;
+  border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: smaller;
+  color:black;
 }
 
-#form2 input{
-      width: 15%;
-      height: 30px;
-      margin: 0.5rem;
-      border: none;
-      border-radius: 10px 10px 10px 10px;
-      -webkit-border-radius: 10px 10px 10px 10px;
-      -moz-border-radius: 10px 10px 10px 10px;
+#form2 input {
+  width: 15%;
+  height: 30px;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+}
+
+label{
+  color: white;
+}
+h1 {
+  color: antiquewhite;
 }
