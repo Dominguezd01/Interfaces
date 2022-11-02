@@ -1,6 +1,5 @@
 window.onload = function (){
    cargarForm()
-
 }
 
 const cargarForm = () =>{
