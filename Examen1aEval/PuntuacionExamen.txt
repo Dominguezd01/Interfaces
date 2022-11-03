@@ -1,0 +1,7 @@
+Completar el fichero CSS: 2 puntos
+Completar el fichero HTML: 8 puntos (Divididos en...)
+	Títulos: 1 punto
+	Párrafo: 2 puntos
+	Tabla: 2 puntos
+	Textos: 1 punto
+	RSS y enlace: 2 puntos

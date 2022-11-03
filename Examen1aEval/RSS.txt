@@ -1,0 +1,8 @@
+Genera un fichero RSS que será enlazado desde el HTML en la sección correspondientemente indicada.
+Este fichero RSS debe contener:
+	1) Un título
+	2) Un enlace a la web de Bioware
+	3) Una descripción
+	4) Una fecha
+	5) Un correo electrónico a contact@bioware.com
+	6) Un item con una noticia sobre Baldur's Gate II

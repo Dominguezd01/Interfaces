@@ -1,0 +1,66 @@
+
+body{
+    background-image: url("fondo2.jpg");  
+    
+    background-repeat: repeat;
+}
+#tituloH1{
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    font-family: "Algerial"
+
+    
+}   
+#spanTit{
+    background-color: #353434d3;
+}
+#tituloH2{
+    color: rgb(200, 202, 228);
+    text-align: center;
+    font-size: 1em;
+}  
+h3{
+    color: black;
+    background-size: 15%;
+}
+#parrafoIncio{
+    color: white;
+    background-color: #4b4a4aa1;
+}
+#tablaCotenidos{
+    background-color: black;
+    border: solid black 10px;
+    text-align: left;
+    width: 50%;
+}
+#titTabla{
+    text-align: center;
+    color: yellow;
+}
+table{
+    width: 100%;
+    color:red;
+}
+
+
+#tdDesarrolla{
+    background-color: blue;
+}
+#ancla{
+    text-align: right;
+}
+
+
+#textoMuestra{
+    text-align: center;
+    
+}
+#muestra{
+    background-color: rgba(255, 255, 255, 0.562);
+}
+
+#textoAbajo{
+    background-color: rgba(255, 255, 255, 0.562);
+}
+

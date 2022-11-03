@@ -1,0 +1,48 @@
+Fichero estilos:
+Título 1 -> Centrado y color negro
+Título 2 -> Centrado y color #F0F07A
+Título 3 -> Color #ECD7EA
+Cuerpo -> Fondo color #1970BC
+Párrafo -> Color blanco
+TR -> Fondo color blanco y letras color rojo
+
+Fichero HTML:
+Texto Título 1: Baldur's Gate II: Shadows of Amn
+Texto Título 2: Uno de los mejores juegos de rol de la historia.
+Texto Título 3: por: <Nombre del alumno>
+
+Texto párrafo: Baldur's Gate II: Shadows of Amn es un videojuego de rol desarrollado por Bioware en el año 2000 para PC. Shadows of Amn es
+ otra historia basada en el famoso juego de rol Dungeons & Dragons. Lo mejor, de lo mejor.
+
+Tabla texto del caption: Tabla con datos del juego
+Tabla texto primera fila (con tipo Título 2): Baldur's Gate II: Shadows of Amn
+Tabla textos segunda fila:
+	Desarrolladora
+	Plataforma
+	Fecha de lanzamiento
+	Modos de juego
+	Género
+Tabla textos tercera fila:
+	Enlace de la imagen https://es.wikipedia.org/wiki/Baldur%27s_Gate_II:_Shadows_of_Amn
+	Título del enlace de la imagen: Enlace a wikipedia
+	Título de la imagen: Baldur's Gate II: Shadows of Amn
+	Alt de la imagen: Baldur's Gate II: Shadows of Amn
+	Título del ancla de Bioware: Ancla a web de Bioware
+	Los demás datos podéis meterlos a mano, que no se tarda nada
+Tabla textos cuarta fila:
+	Título del ancla: Ancla a la sección de texto de muestra
+	
+Texto (con tipo Título 1) párrafo del primer ancla: Texto de muestra para realizar pruebas de ancla
+Texto del párrafo:
+	Baldur’s Gate fue mucho más que la enésima adaptación de Dungeons & Dragons a los videojuegos: el RPG de BioWare supuso un sonoro punto de inflexión dentro del género,
+	transmitiendo sensaciones propias -y casi exclusivas- de los juegos de papel y dados con una naturalidad insólita. Introduciéndonos en los Reinos Olvidados como jamás se había hecho hasta entonces.
+
+	A simple vista podría pasar por uno de tantos juegos de rol en perspectiva isométrica. El típico en el que creas tu personaje, reúnes un equipo, 
+	consigues poderosas armas y hechizos y salvas el mundo (en este caso, la costa oeste de Faerûn) de una poderosa amenaza. 
+	Y, no nos vamos a engañar, en esencia eso es lo que ocurre a lo largo del juego. Entonces, ¿qué lo hace especial?…
+	
+Texto (con tipo Título 1) del ancla de Bioware: Esta es la Web de Bioware: https://www.bioware.com/
+
+
+	
+	
