@@ -11,55 +11,78 @@ const cargarForm = () => {
 
             )
             let etiqueta = document.getElementById("etiquetaForm2")
-            etiqueta.innerHTML =""
+            etiqueta.innerHTML = ""
             comprobarValores(data)
         })
 }
 
-const comprobarValores = (data) => { 
-    if(data.nombre == ""){
+const comprobarValores = (data) => {
+    if (data.nombre == "") {
         changeLabel("Introduce un nombre")
-  
+
+    } else {
+        localStorage.setItem("nombre", data.nombre)
     }
-    if(data.apellidos == ""){
+    if (data.apellidos == "") {
         changeLabel("Introduce unos apellidos")
-     
+
+    } else {
+        localStorage.setItem("apellido", data.apellidos)
     }
-    if(data.fechaNac == "" ||  new Date (data.fechaNac) > new Date()){
+    if (data.fechaNac == "" || new Date(data.fechaNac) > new Date()) {
         changeLabel("Introduce una fecha de nacimiento válida")
-    
+
+    } else {
+        localStorage.setItem("fechaNac", data.fechaNac)
     }
-    if (data.dni.match(/[A-Z]/)== false || data.dni.length != 9) {
+    if (data.dni.match(/[A-Z]/) == false || data.dni.length != 9) {
         changeLabel("Introduce un DNI válido")
- 
+
+    } else {
+        localStorage.setItem("dni", data.dni)
     }
-    if(data.calle == ""){
+
+    if (data.calle == "") {
         changeLabel("Introduce la calle")
-   
+
+    } else {
+        localStorage.setItem("calle", data.calle)
     }
-    if(data.numero == "" ||isNaN(data.numero)){
+    if (data.numero == "" || isNaN(data.numero)) {
         changeLabel("Introduce un número válido en el apartado <i>Dirección</i>")
-    
+
+    } else {
+        localStorage.setItem("numero", data.numero)
     }
-    if(data.ciudad == ""){
+    if (data.ciudad == "") {
         changeLabel("Introduce una ciudad")
-  
+
+    } else {
+        localStorage.setItem("ciudad", data.ciudad)
     }
-    if(isNaN(data.codPostal) || data.codPostal == ""){
+    if (isNaN(data.codPostal) || data.codPostal == "") {
         changeLabel("Introduce un código postal válido")
 
+    } else {
+        localStorage.setItem("codPostal", data.codPostal)
     }
-    if(data.provincia == ""){
+    if (data.provincia == "") {
         changeLabel("Introduce una provincia")
-        return false
+
+    } else {
+        localStorage.setItem("provicia", data.provincia)
     }
-    if(isNaN(data.numTlf)|| data.numTlf.length != 9){
+    if (isNaN(data.numTlf) || data.numTlf.length != 9) {
         changeLabel("Introduce un número de telefono válido")
 
+    } else {
+        localStorage.setItem("numTlf", data.numTlf)
     }
-    if(data.email == ""){
+    if (data.email == "") {
         changeLabel("Introduce un correo")
 
+    } else {
+        localStorage.setItem("email", data.email)
     }
 }
 const h1Usuario = () => {
@@ -77,12 +100,13 @@ const mostrarForm = () => {
     document.body.append(form2)
 }
 
-const changeLabel = (text) =>{
+const changeLabel = (text) => {
     let etiqueta = document.getElementById("etiquetaForm2")
     etiqueta.innerHTML += `${text}<br>`
     etiqueta.style.display = "block"
     etiqueta.style.color = "orange"
 }
+
 
 
 
