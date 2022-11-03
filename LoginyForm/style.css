@@ -1,11 +1,27 @@
 body {
-  background-color: #474747;
+  background: rgb(25, 25, 25);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(25, 25, 25, 1) 0%,
+    rgba(70, 70, 70, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(25, 25, 25, 1) 0%,
+    rgba(70, 70, 70, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(25, 25, 25, 1) 0%,
+    rgba(70, 70, 70, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#191919",endColorstr="#464646",GradientType=1);
 }
 
-#divForm1{
+#divForm1 {
   width: 100%;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,8 +45,6 @@ body {
   text-align: center;
 }
 
-
-
 #form2 input {
   text-align: center;
   width: 15%;
@@ -42,14 +56,12 @@ body {
   -moz-border-radius: 5px 5px 5px 5px;
 }
 
-#form2 label{
+#form2 label {
   color: white;
   font-size: 1em;
 }
-
 
 h1 {
   color: antiquewhite;
   font-family: Arial, Helvetica, sans-serif;
 }
-

@@ -13,7 +13,6 @@ const cargarForm = () => {
             let etiqueta = document.getElementById("etiquetaForm2")
             etiqueta.innerHTML =""
             comprobarValores(data)
-            console.log(data)
         })
 }
 
@@ -26,7 +25,7 @@ const comprobarValores = (data) => {
         changeLabel("Introduce unos apellidos")
      
     }
-    if(data.fechaNac == "" ||  new Date (data.fechaNac)> new Date()){
+    if(data.fechaNac == "" ||  new Date (data.fechaNac) > new Date()){
         changeLabel("Introduce una fecha de nacimiento válida")
     
     }
@@ -74,7 +73,7 @@ const h1Usuario = () => {
 const mostrarForm = () => {
     let form2 = document.getElementById("form2")
 
-    form2.style.display = " block"
+    form2.style.display = "block"
     document.body.append(form2)
 }
 
@@ -83,8 +82,6 @@ const changeLabel = (text) =>{
     etiqueta.innerHTML += `${text}<br>`
     etiqueta.style.display = "block"
     etiqueta.style.color = "orange"
-
-
 }
 
 
