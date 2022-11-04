@@ -19,7 +19,7 @@ const cargarForm = () =>{
 const recogerValores = (data) =>{
     localStorage.setItem("nomUsuario", data.userName)
     if(localStorage.getItem("nomUsuario")!="" && data.pass != ""){
-      window.location.href = "./form2.html"
+      location.href = "./form2.html"
     }else{
       let label = document.getElementById("etiqueta")
       label.style.color = "red"

@@ -22,10 +22,9 @@ body {
   width: 100%;
   max-width: 600px;
   margin: 0px auto;
-  margin-top: 25%;
+  margin-top: 15%;
   display:flex;
   justify-content:center;
-  align-items:baseline;
 }
 
 ::placeholder {
@@ -179,8 +178,8 @@ h1 {
   animation: slide-in-right 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 .campos2{
-  -webkit-animation: slide-in-right 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-right 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 @-webkit-keyframes slide-in-right {

@@ -10,6 +10,7 @@ const cargarForm = () => {
                 new FormData(e.target)
 
             )
+
             let etiqueta = document.getElementById("etiquetaForm2")
             etiqueta.innerHTML = ""
             comprobarValores(data)
@@ -72,7 +73,7 @@ const comprobarValores = (data) => {
     } else {
         localStorage.setItem("provicia", data.provincia)
     }
-    if (isNaN(data.numTlf) || data.numTlf.length != 9) {
+    if (Number.isInteger(data.NumTlf) || data.numTlf.length != 9) {
         changeLabel("Introduce un número de telefono válido")
 
     } else {
@@ -84,6 +85,7 @@ const comprobarValores = (data) => {
     } else {
         localStorage.setItem("email", data.email)
     }
+    console.log(data)
 }
 const h1Usuario = () => {
     let h1Usuarios = document.getElementById("h1Usuario")
