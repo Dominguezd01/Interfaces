@@ -21,10 +21,12 @@ const recogerValores = (data) =>{
     if(localStorage.getItem("nomUsuario")!="" && data.pass != ""){
       location.href = "./form2.html"
     }else{
-      let label = document.getElementById("etiqueta")
-      label.style.color = "red"
-      label.style.display ="block"
+      document.getElementById("name").style = "border: red solid 2px";
+      document.getElementById("pas").style = "border: red solid 2px";
     }
 }
 
 
+const changeLabeltoGreen = (obj) => {
+ 
+}
