@@ -27,6 +27,3 @@ const recogerValores = (data) =>{
 }
 
 
-const changeLabeltoGreen = (obj) => {
- 
-}
