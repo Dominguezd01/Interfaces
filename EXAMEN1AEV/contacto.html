@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contacto</title>
+</head>
+
+<link rel="stylesheet" href="estilos.css">
+<body id ="contacto">
+	<a class="inicioVolverContacto" href="./#imagenes" style="text-align: left">
+        Volver a inicio
+    </a>
+	<div class="formWrapper">
+		<form id="form">
+			<input id="nombre" name ="nombre" placeholder="Introduce tu nombre" type="text"></input><br>
+		
+			<input id="email" placeholder="Introduce tu email" type="email"name="email"></input><br><br>
+			<textarea id="texto" placeholder="Escríbanos" name="texto"></textarea><br><br>
+			<button>Enviar</button>
+			<div id="pDiv">
+				<p id="parrafoCorrecto"></p>
+			</div>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+		</form>
+	</div>
+	
+</body>
+<script>
+	document.getElementById("form").addEventListener("submit", e =>{
+		e.preventDefault()
+		const data = Object.fromEntries(new FormData(e.target))
+		console.log(data)
+		let nombre, email
+		if(data.nombre == ""){
+			document.getElementById("nombre").style.border="red 1px solid"
+		}else{
+			nombre = data.nombre
+		}
+		if(data.email == ""){
+			document.getElementById("email").style.border="red 1px solid"
+		}else{
+			email = data.email
+		}
+		if(data.texto == ""){
+			document.getElementById("texto").style.border="red 1px solid"
+		}
+
+		if(email != undefined && nombre != undefined && data.texto != ""){
+			document.getElementById("form").style.display ="none"
+			let parrafo = document.getElementById("parrafoCorrecto")
+			parrafo.innerHTML =`<p id="parrafoCorrecto">${nombre} tu solicitud se ha procesado correctamente, recibiras mas informacion en tu correo ${email}</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>`
+			let cuerpo = document.getElementById("contacto")
+			cuerpo.append(parrafo)
+		}
+	})
+</script>
+</html>

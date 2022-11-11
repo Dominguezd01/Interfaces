@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+body {
+  background: rgb(74, 73, 73);
+  background: linear-gradient(
+    160deg,
+    rgba(74, 73, 73, 1) 0%,
+    rgba(232, 153, 62, 1) 37%
+  );
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+.containerSection,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 5em;
+}
+.parrafoIncio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+p{
+	font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 10em;
+  font-family: "Anton", sans-serif;
+  color: rgb(223, 221, 221);
+}
+
+img {
+  margin-right: 4em;
+}
+
+#footerContainer {
+  text-align: center;
+  font-size: 2em;
+}
+#enlaceAContacto {
+  text-decoration: none;
+  color: white;
+  text-decoration-line: underline ;
+
+}
+.txtImg {
+  text-align: center;
+}
+
+#parrafoRap {
+  font-size: 2em;
+}
+
+.inicioVolver{
+	text-decoration: none;
+	color:white;
+}
+
+#contacto{
+	background: rgb(74,73,73);
+background: linear-gradient(0deg, rgba(74,73,73,1)10%, rgba(237,142,32,1) 105%);
+	display: block;
+}
+img{
+	border: 1px solid black;
+	border-radius: 5%;
+	background-color: #f1b167;
+}
+.formWrapper{
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	width: 95%;
+	text-align: center;
+}
+
+form input{
+	margin-top: 1em;
+	text-align: center;
+	width: 50%;
+	border-radius: 10px 10px 10px 10px;
+}
+textarea{
+	height: 400px;
+    width: 500px;
+	text-align: center;
+	border-radius: 10px 10px 10px 10px;
+}
+#pdiv{
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+#parrafoCorrecto{
+	color:white;
+	font-family: 'Ubuntu', sans-serif;
+}
+::placeholder{
+	text-align: center;
+}
+.inicioVolverContacto{
+	text-decoration: none;
+	color: white;
+	float: left;
+}
+#hiphop{
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+}
